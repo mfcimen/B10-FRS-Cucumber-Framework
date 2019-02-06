@@ -1,1 +1,8 @@
-# foksdf
+# this is a comment line
+
+
+
+# IntelliJ IDEA related files
+.idea/
+*.iml
+
