@@ -1,8 +1,14 @@
 # this is a comment line
-
+# we can use '#' to add comment lines to our .gitignore file
 
 
 # IntelliJ IDEA related files
 .idea/
 *.iml
 
+
+
+
+
+# git rm -r --cached .
+# this command is going to remove everything that is cached to be updated in your GitHub remote repository
