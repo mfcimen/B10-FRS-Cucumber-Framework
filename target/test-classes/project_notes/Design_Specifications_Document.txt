@@ -1,0 +1,29 @@
+Framework DSD
+Design Specifications Document
+
+<!-- PROJECT SPECIFICATIONS -->
+Group name:			com.cybertek
+Project name:		B10-FRS-Cucumber-Framework
+Software at test:	BriteErpDemo
+
+Build:				Maven
+Languages:			Java, Gherkin
+Automation Tool:	Selenium
+
+Framework:			Hybrid >>
+							> Behavior Driven Development (Cucumber)
+							> Page Object Model (POM)
+
+Testing:			JUnit
+Reporting:			Cucumber default html report
+
+Version Control:	Git
+Distributed VCS:	GitHub
+	https://github.com/CybertekSchool/B10-FRS-Cucumber-Framework.git
+
+
+<!-- GitHub SPECIFICATIONS -->
+1. Source code ONLY
+2. NO IDE related files
+3. index.html (Cucumber default html report) ONLY
+4. No code to be pushed to master branch

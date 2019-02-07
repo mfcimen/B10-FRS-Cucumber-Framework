@@ -1,0 +1,62 @@
+CREATING AND MANAGING BRANCHES
+feel free to read the following post
+or do more reading/research online
+also, practice on you own framework, don't be afraid to break
+everything, it is better if you break now, rather than at work
+
+https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+
+
+Building my Framework structure based on POM and Cucumber principles
+
+on JAVA level,
+	right click on Java
+	New -> Package
+	name: com.cybertek.pages		(per POM)
+
+	right click on Java
+	New -> Package
+	name: com.cybertek.utilities 	(per POM)
+
+	right click on Java
+	New -> Package
+	name: com.cybertek.runners		(per Cucumber)
+
+	right click on Java
+	New -> Package
+	name: com.cybertek.step_defs	(per Cucumber)
+
+
+on TEST level,
+	right click on test
+	New -> Directory
+	name: resources					(per Cucumber)
+
+	right click on resources folder that you just created
+	Mark Directory as -> Test Resources Root
+
+	right click on resources
+	New -> Directory
+	name: features					(per Cucumber)
+
+
+Adding our high level configuration.properties file
+on PROJECT level
+    right click on B10-FRS-Cucumber-Framework
+    New -> File
+    name: configuration.properties
+
+
+<<< IMPORTANT - PLEASE READ >>>
+THIS IS NOT A COMMON PRACTICE, but if you want to keep your notes within your project
+you can simply create files in resources and do as you wish.
+
+This is how WE did it:
+    right click on resources
+    New -> Directory
+    name: project_notes
+
+    THEN: every time you want a new file in this project_notes
+    right click on project_notes
+    New -> File
+    name: uptoyou.whatever (store it as .txt if prompted)
