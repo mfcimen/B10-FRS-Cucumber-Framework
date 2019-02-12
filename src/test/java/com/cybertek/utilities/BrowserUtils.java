@@ -27,6 +27,4 @@ public class BrowserUtils {
 
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
-
-
 }
