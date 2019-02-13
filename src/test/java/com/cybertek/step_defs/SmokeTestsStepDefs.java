@@ -40,13 +40,11 @@ public class SmokeTestsStepDefs {
             System.out.println("From website: " + section.getText());
         }
 
-
         List<String> sections = new ArrayList<>();
 
         sections.addAll(expectedSections);
 
         Assert.assertEquals(expectedSections, sections);
-
 
     }
 
