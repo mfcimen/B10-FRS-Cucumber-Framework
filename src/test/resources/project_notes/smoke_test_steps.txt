@@ -1,0 +1,227 @@
+Smoke Test for BRITE ERP purchase module BRIT-3578
+Precondition:
+
+
+Test WebApplication is up and running
+1. Open Browser
+2. Go to http://52.39.162.23/
+3. Verify title is: Odoo
+4. Verify page contains links to databases
+	* BriteErp
+	* BriteErpDemo
+	* Test
+
+
+Login as a USER
+1. Go to http://52.39.162.23/
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_user2@info.com
+5. Enter password: KjKtfgrs38
+6. Click log in button
+7. Verify url is: http://52.39.162.23/web?#menu_id=115&action=120&active_id=channel_inbox
+8. Verify title is: #Inbox-Odoo
+
+Login as a MANAGER
+1. Go to http://52.39.162.23/
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_manager2@info.com
+5. Enter password: KjKtfgrs31
+6. Click log in button
+7. Verify url is: http://52.39.162.23/web?#menu_id=115&action=120&active_id=channel_inbox
+8. Verify title is: #Inbox-Odoo
+
+
+Test - Represents a Test Visibility and clickability of purchases button (Manager prospective)
+1. Go to http://52.39.162.23/
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_manager2@info.com
+5. Enter password: KjKtfgrs31
+6. Click log in button
+7. Click on Purchases
+8. Verify url is: http://52.39.162.23/web?#view_type=list&model=purchase.order&menu_id=518&action=695
+9. Verify title is: Requests for Quotation - Odoo
+
+
+Test Visibility and clickability of purchases button (User prospective)
+1. Go to http://52.39.162.23/
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_user2@info.com
+5. Enter password: KjKtfgrs38
+6. Click log in button
+7. Click on Purchases
+8. Verify url is: http://52.39.162.23/web?#view_type=list&model=purchase.order&menu_id=518&action=695
+9. Verify title is: Requests for Quotation - Odoo
+
+
+
+Test Visibility and clickability of Vendors button (User prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' buttongit
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_user2@info.com
+5. Enter password: KjKtfgrs38
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=list&model=purchase.order&menu_id=518&action=695
+10. Verify title is: Vendors - Odoo
+
+
+Test Visibility and clickability of Vendors  button (Manager prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_manager2@info.com
+5. Enter password: KjKtfgrs31
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=list&model=purchase.order&menu_id=518&action=695
+10. Verify title is: Vendors - Odoo
+
+
+Test Visibility and clickability of Products button (User prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_user2@info.com
+5. Enter password: KjKtfgrs38
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=kanban&model=res.partner&menu_id=506&action=50
+10. Verify title is: Products - Odoo
+
+
+Test Visibility and clickability of Products  button (Manager prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_manager2@info.com
+5. Enter password: KjKtfgrs31
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=kanban&model=res.partner&menu_id=506&action=50
+10. Verify title is: Products - Odoo
+
+
+Test Visibility and clickability of Incoming Products button (User prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_user2@info.com
+5. Enter password: KjKtfgrs38
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=list&model=stock.move&menu_id=514&action=519
+10. Verify title is: Incoming Products - Odoo
+
+
+Test Visibility and clickability of Incoming Products  button (Manager prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_manager2@info.com
+5. Enter password: KjKtfgrs31
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=list&model=stock.move&menu_id=514&action=519
+10. Verify title is: Incoming Products - Odoo
+
+
+Test Visibility and clickability of Vendor Bills button (User prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_user2@info.com
+5. Enter password: KjKtfgrs38
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=list&model=account.invoice&menu_id=515&action=687
+10. Verify title is: Vendor Bills - Odoo
+
+
+Test Visibility and clickability of Vendor Bills  button (Manager prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_manager2@info.com
+5. Enter password: KjKtfgrs31
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=list&model=account.invoice&menu_id=515&action=687
+10. Verify title is: Vendor Bills - Odoo
+
+
+Test Visibility and clickability of Reporting  button (Manager prospective only)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_manager2@info.com
+5. Enter password: KjKtfgrs31
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=graph&model=purchase.report&menu_id=521&action=701
+10. Verify title is:  Purchase Analysis - Odoo
+
+
+
+
+
+
+Test Visibility and clickability of Requests for Quotation button (Manager prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_manager2@info.com
+5. Enter password: KjKtfgrs31
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=list&model=purchase.order&menu_id=519&action=696
+10. Verify title is: Requests for Quotation - Odoo
+
+
+Test Visibility and clickability of Requests for Quotation button (User prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_user2@info.com
+5. Enter password: KjKtfgrs38
+6. Click log in button
+7. Click Purchases button
+8. Click on Requests for Quotation button
+9. Verify url is: http://52.39.162.23/web?#view_type=list&model=purchase.order&menu_id=519&action=696
+10. Verify title is: Requests for Quotation - Odoo
+
+
+Test Visibility and clickability of Purchase Orders button (Manager prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_manager2@info.com
+5. Enter password: KjKtfgrs31
+6. Click log in button
+7. Click Purchases button
+8. Click on Purchase Orders button
+9. Verify url is: http://52.39.162.23/web?#view_type=list&model=purchase.order&menu_id=519&action=696
+10. Verify title is: Purchase Orders - Odoo
+
+
+Test Visibility and clickability of Purchase Orders button (User prospective)
+1. Go to http://52.39.162.23/
+2. Click on 'Sign in' button
+3. Choose BriteErpDemo in Database
+4. Enter email: in_pos_user2@info.com
+5. Enter password: KjKtfgrs38
+6. Click log in button
+7. Click Purchases button
+8. Click on Purchase Orders button
+9. Verify url is: http://52.39.162.23/web?#view_type=list&model=purchase.order&menu_id=519&action=696
+10. Verify title is: Purchase Orders - Odoo
