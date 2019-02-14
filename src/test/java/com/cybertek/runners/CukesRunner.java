@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com/cybertek/step_defs",
-        tags = "@wip",
-        dryRun = true
+        tags = "@links",
+        dryRun = false
 )
 
 public class CukesRunner {

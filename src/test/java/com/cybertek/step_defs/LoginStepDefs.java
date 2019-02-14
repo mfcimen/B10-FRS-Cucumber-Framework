@@ -63,8 +63,7 @@ public class LoginStepDefs {
 
     @Then("the title should be Odoo")
     public void the_title_should_be_Odoo() {
-        assertEquals("Login | Website localhost", Driver.getDriver().getTitle());
-
+        assertEquals("Odoo", Driver.getDriver().getTitle());
     }
 
 
